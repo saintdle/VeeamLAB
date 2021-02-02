@@ -36,7 +36,7 @@ resource "vsphere_virtual_machine" "VBR" {
         auto_logon_count        = 3
  
         run_once_command_list = [
-          "cmd.exe /C Powershell.exe -ExecutionPolicy bypass -file \\\\10.0.40.20\\AutomatedVBRInstall\\AutomatedVBRInstall.ps1",
+          "cmd.exe /C Powershell.exe -ExecutionPolicy bypass -file \\\\${var.repo_ip}\\AutomatedVBRInstall\\AutomatedVBRInstall.ps1",
         ]
       }
       

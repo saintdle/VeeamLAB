@@ -28,3 +28,4 @@ variable "Domain_Password" {}
 variable "Gateway" {}
 variable "ubuntu1804_password" {}
 variable "centos_password" {}
+variable "repo_ip" {}
